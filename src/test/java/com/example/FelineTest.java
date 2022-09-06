@@ -20,7 +20,7 @@ public class FelineTest {
         this.expected = expected;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "animalKind: {0}, return {1}")
     public static Object[][] getFood() {
         return new Object[][] {
                 {"Травоядное", List.of("Трава", "Различные растения")},

@@ -3,7 +3,6 @@ package com.example;
 import java.util.List;
 
 public class Lion extends Animal {
-
     boolean hasMane;
 
     public Lion(String sex) throws Exception {
@@ -16,7 +15,6 @@ public class Lion extends Animal {
         }
     }
 
-
     public boolean doesHaveMane() {
         return hasMane;
     }
@@ -26,6 +24,7 @@ public class Lion extends Animal {
     }
 
     private Kittens kittens;
+
     public Lion(Kittens kittens) {
         this.kittens = kittens;
     }
@@ -33,5 +32,4 @@ public class Lion extends Animal {
     public int getKittens() {
         return kittens.getKittens();
     }
-
 }

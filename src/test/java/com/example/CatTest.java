@@ -22,7 +22,7 @@ public class CatTest {
     }
 
     @Test
-    public void checkNumberOfMethodEatMeatCalls() throws Exception{
+    public void checkNumberOfMethodEatMeatCalls() throws Exception {
         Cat cat = new Cat(feline);
         cat.getFood();
         Mockito.verify(feline, Mockito.times(1)).eatMeat();
